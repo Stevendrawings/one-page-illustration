@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/*le selecteur universel qui parle atoute les balise et donc on enleve les marges interiere et exterieure a toute les balises ainsi que les bordures et element cliquable*/
+
+*{ margin:0;
+	padding:0;
+	border:0;
+	outline:none;
+}
+body 
+{ background-color:#000;
+	font-family:georgia, "times New roman", times
+	serif;
+	font size:62.5%;
+}
+li{
+	list-style:none;
+}
+/*on en leve le soulignement des liens par defaut*/
+a{ 
+	text-decoration: none;
+}
+/* on fixe le menu pour qui reste on haut*/
+#nav{ 
+background-color: #000;
+	width: 100%; 
+	position:fixed;
+	top:0;
+	left:0;
+	line-height:150px; /*hauteur de la ligne*/
+	border-bottom:1px solid #e1e1e1; 
+	text-align:center; /*centrer le texte */
+}
+
+#nav li {
+	display:inline;
+	margin:20px;
+}
+
+#nav li a {
+	color:#FFF;
+	font-size:3.4em;
+	}
+	
+#nav li a:hover{
+		color:#f00;
+	}
+.section{
+	width:90%;
+	padding:0 5%;
+	float:left;
+	height:3000px; /*concerne la hauteur*/
+}
+
+.section h2{
+	margin :250px 0 50px 0;
+	color: #666;
+}
+
+.section p{
+	font-size:3em;
+	width:50%; 
+}
+/*section print et contact*/
+.black{
+	color:#fff;
+	background:url(../img/black_vert.jpg) repeat-x bottom left #000; 
+	/*pas d'espace entre url" "( et la paranthese*/
+}
+
+.white{
+	color:#000;
+	background:url(../img/white_vert.jpg) repeat-x bottom left #fff;
+}
+#retour{
+	width: 40px;
+	height:40px;
+	position:fixed; 
+	bottom:50px; /*concerne le bas de la page*/
+	right:25px; /*droite*/
+	background:url(../img/back.png) no-repeat center center #fff;
+	background-size:40px 40px;
+}
+
+li label {
+	font:Georgia, "Times New Roman", Times, serif;
+	color:#FFF;
+	}
+	
+	
+	
+
+
+
+	
+
+
+
+	
+	

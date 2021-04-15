@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>le nom de mon site</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!--ici commence la div id =global-->
+<div id="global"> 
+  <!--debut du header-->
+  <div id="header">
+    <h1>CONTACT</h1>
+  </div>
+  <!--fin du header-->
+ <!-- debut du menu -->
+  <ul id="menu">
+  	<li><a href="index.html">Accueil</a></li>
+    <li><a href="galerie-web.html">Galerie web</a></li>
+    <li><a href="galerie-print.html">Galerie Print</a></li>
+    <li><a href="cv.html">Cv</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <!--fin du menu-->
+  <!--debut du contenu-->
+  <div id="contenu"> 
+    <h2>Contactez-moi</h2>
+    <!--debut du formulaire-->
+    <form action="js/courriel.php" method="post" name="formulaire" id="formulaire">
+    <fieldset>
+    	<legend>Votre identité</legend>
+        <ul>
+        	<li>
+            <label>Civilité:</label>
+            <select name="civilite" id="civilite" tabindex="1">
+            <option value=""></option>
+            <option value="Mme">Mme</option>
+            <option value="Melle">Melle</option>
+            <option value="Mr">Mr</option>
+            </select>
+            
+            </li>
+        	<li><label>Prénom*:</label><input type="text" name="prenom" id="prenom" size="40" tabindex="2"/></li>
+            <li><label>Nom*:</label><input type="text" name="nom" id="nom" size="40" tabindex="3"/></li>
+            <li><label>Email*:</label><input type="text" name="mail" id="mail" size="40" tabindex="4"/></li>
+        </ul>
+    </fieldset>
+    <fieldset>
+    	<legend>Votre message</legend>
+        <ul>
+        	<li><label>Objet:</label> <input type="text" name="objet" id="objet" tabindex="5" size="40"/></li>
+            <li><label class="message">Message:</label>
+            <textarea name="message" id="message" cols="32" rows="10" tabindex="6"></textarea></li>
+            
+        
+        </ul>
+        
+    </fieldset>
+    <input type="submit" name="envoyer" id="envoyer" tabindex="7" value="Envoyer"/>
+    
+    </form> <!-- fin du formulaire-->
+  
+    
+  </div>
+  <!--fin du contenu-->
+ <!-- debut du footer-->
+  <ul id="footer">
+  	<li>Copyright 2014</li>
+    <li>|</li>
+    <li><a href="mailto:armelle@graphikchannel.com">Contact</a></li>
+    <li>|</li>
+    <li><a href="#">Mentions légales</a></li>
+  </ul>
+ <!-- fin du footer-->
+</div>
+<!--ici finit la div id =global-->
+
+</body>
+</html>
